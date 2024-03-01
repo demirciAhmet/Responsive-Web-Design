@@ -36,4 +36,5 @@ tbody tr:nth-child(even) td
 
 .right {
 	text-align: right;
+	color: red;
   }
