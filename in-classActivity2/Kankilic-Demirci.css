@@ -1,56 +1,64 @@
 /*CENG311 Activity 2 css file*/
 
 /*styling for the table goes here*/
-body 
-{
-	width: 750px;
-	margin: 0 auto;
-}
+/*ahmet kaan demirci
+ can kankılıc*/
 
-table 
-{
-	border-collapse: collapse;
-	border: 1px solid black;
-	margin: 20px;
-}
-
-thead 
-{
-	background-color: yellow;
-}
-
-caption
-{
-	font-weight: bold;
-	font-size: 24px;
-}
-th, td
-{
-	border: 1px solid black;
-	padding: .2em 1em .2em .5em;
-	text-align: left;
-	vertical-align: middle;
-}
-
-tfoot
-{
-	background-color: yellow;
-	font-weight: bold;
-	text-align: right;
-}
-
-tbody tr:nth-child(even) td 
-{
-	background-color: yellow;
-}
-
-.right {
-	text-align: right;
-  }
-
-.department {
-text-align: top;
-text-align: left;
-background-color: white;
-font-weight: bold;
-}
+ body 
+ {
+	 text-align: justify;
+	 width: 750px;
+	 margin: 0 auto;
+	 border: 1px solid black;
+	 padding: 5px;
+ }
+ 
+ table 
+ {
+	 border: 1px solid black;
+	 border-collapse: collapse;
+	 padding: 10px;
+ }
+ 
+ thead 
+ {
+	 background-color: yellow;
+ }
+ 
+ caption
+ {
+	 font-weight: bold;
+	 font-size: 24px;
+	 padding: .2em 1em .2em .5em;	
+ }
+ 
+ th, td
+ {
+	 border: 1px solid black;
+	 padding: .2em 1em .2em .5em;
+	 text-align: left;
+	 vertical-align: middle;
+ }
+ 
+ tfoot
+ {
+	 background-color: yellow;
+	 font-weight: bold;
+	 text-align: right;
+ }
+ 
+ .right {
+	 text-align: right;
+ }
+ 
+ .department {
+ text-align: left;
+ vertical-align: top;
+ background-color: white;
+ font-weight: bold;
+ }
+ 
+ tbody tr:nth-child(even) td:not(.department)
+ {
+	 background-color: yellow;
+ }
