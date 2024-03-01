@@ -32,6 +32,7 @@ tfoot
 {
 	background-color: yellow;
 	font-weight: bold;
+	text-align: right;
 }
 
 tbody tr:nth-child(even) td 
@@ -41,11 +42,10 @@ tbody tr:nth-child(even) td
 
 .right {
 	text-align: right;
-	color: red;
   }
 
 .department {
-text-align: right;
+text-align: left;
 background-color: white;
 font-weight: bold;
 }
