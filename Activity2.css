@@ -38,3 +38,8 @@ tbody tr:nth-child(even) td
 	text-align: right;
 	color: red;
   }
+
+.department {
+text-align: right;
+color: red;
+}
