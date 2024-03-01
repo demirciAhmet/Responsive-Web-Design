@@ -41,5 +41,6 @@ tbody tr:nth-child(even) td
 
 .department {
 text-align: right;
-color: red;
+background-color: white;
+font-weight: bold;
 }
