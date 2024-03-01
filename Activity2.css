@@ -12,6 +12,7 @@ table
 	border-collapse: collapse;
 	border: 1px solid black;
 	margin: 20px;
+	border
 }
 
 thead 
@@ -19,7 +20,7 @@ thead
 	background-color: yellow;
 }
 
-th, td 
+th, td
 {
 	border: 1px solid black;
 	padding: .2em 1em .2em .5em;
@@ -27,7 +28,11 @@ th, td
 	vertical-align: middle;
 }
 
-
+tfoot
+{
+	background-color: yellow;
+	font-weight: bold;
+}
 
 tbody tr:nth-child(even) td 
 {
