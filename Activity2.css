@@ -33,3 +33,7 @@ tbody tr:nth-child(even) td
 {
 	background-color: yellow;
 }
+
+td::right {
+	text-align: right;
+  }
