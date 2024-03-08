@@ -1,0 +1,57 @@
+.advertisement
+{
+	width:100px;
+	height:150px; 
+	border-color:black;
+	border-width:2px; 
+	background-color:gray; 
+	color:black;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+
+.header
+{
+	position: relative;
+}
+.logo
+{	
+	float:left;
+	margin-left:110px;
+	margin-bottom:60px;
+}
+
+
+.title
+{
+	float:left;
+	margin-left:20px;
+}
+
+.content
+{
+	clear:both;
+	width:70%;
+	margin:auto;
+}
+
+
+.image .img1
+{
+	width:250px;
+	float:left;
+	margin-right:10px;
+	margin-bottom:10px;
+}
+.main
+{
+	text-justify: inter-word;
+	margin-top:150px;
+}
+
+.head
+{
+	margin:auto;
+	width:50%;
+}
