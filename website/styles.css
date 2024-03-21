@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Istok Web", sans-serif;
+    text-decoration: none;
+}
+
+
+body{background-color: #ececec;}
+
+header{
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom:2px solid #000;
+    align-items: center;
+    padding: 10px 20px;
+}
+header h1{
+    font-size:38px;
+     font-weight: bold;
+}
+
+
+/* CSS for navigation bar */
+
+
+nav ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    
+}
+
+nav ul li a{
+    padding: 20px 10px;
+    color: #00051f;
+   
+    
+   
+}
+nav ul li a i{
+    padding: 20px 10px;
+    color: #00051f;
+   
+    
+   
+}
+nav ul li a:hover{
+    padding: 10px 10px;
+    color: #5672ff;
+
+  
+}
+/* Specific Styles */
+main {
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+}
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /*Footer color*/
+    color: #fff;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff; /* Primary color for example */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker for hover */
+}
