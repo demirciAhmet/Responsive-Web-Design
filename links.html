@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            // Fetch and include navigation.html
+            $("#navigation").load("navigation.html");
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Container for the navigation bar -->
+    <div id="navigation"></div> </br>
+  
+    <div id="text-container"></div>
+
+    <script>
+        // Function to fetch    and read text file line by line
+        function readTextFileLineByLine(filePath) {
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    // Split the text into lines
+                    const lines = text.split('\n');
+                    
+                    // Process each line
+                    lines.forEach(line => {
+                        // Here you can process each line as needed
+                        // For this example, let's just log each line to the console and append it to the HTML
+                        console.log(line);
+                        document.getElementById('text-container').innerHTML += line + '<br>';
+                    });
+                })
+                .catch(error => {
+                    console.error('There was a problem reading the text file:', error);
+                });
+        }
+    
+        // Call the function with the path to your text file
+        readTextFileLineByLine('links');
+    </script>
+
+</body>
+</html>
