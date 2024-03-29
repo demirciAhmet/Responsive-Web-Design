@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Button Game</title>
+<style>
+    #movingButton {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<button id="movingButton" onmouseover="setTimeout(moveButton, timeout)" onclick="doClick()">Click Me!</button>
+
+<script>
+var clicks = 0;
+var level = 1;
+var timeout = 500;
+var isClicked = false;
+
+// move the button
+function moveButton() {
+    
+    var button = document.getElementById('movingButton');
+    var windowWidth = window.innerWidth - button.offsetWidth;
+    var windowHeight = window.innerHeight - button.offsetHeight;
+
+    var randomX = Math.floor(Math.random() * windowWidth);
+    var randomY = Math.floor(Math.random() * windowHeight);
+
+    button.style.left = randomX + 'px';
+    button.style.top = randomY + 'px';
+}
+
+// do click action && move the button
+function doClick() {
+    
+    clicks++;
+    if (clicks >= 3) {
+        level++;
+        if (level > 6) {
+            alert("Congratulations! You have completed all levels!");
+            return;
+        }
+        timeout -= 100;
+        if (timeout < 0){
+            timeout = 0;
+        }
+        alert("Level " + level + "!");
+        clicks = 0;
+    }   
+
+}
+
+</script>
+
+</body>
+</html>
