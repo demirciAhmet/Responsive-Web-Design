@@ -3,38 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory Listing</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        li a {
-            text-decoration: none;
-            color: #007bff;
-        }
-        li a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            // Fetch and include navigation.html
+            $("#navigation").load("navigation.html");
+        });
+    </script>
 </head>
 <body>
-    <h1>Directory Listing</h1>
-    <ul>
-        <!-- List files -->
-        <li><a href="file1.html">File 1</a></li>
-        <li><a href="file2.html">File 2</a></li>
-        <li><a href="file3.html">File 3</a></li>
-        <!-- List subdirectories -->
-        <li><a href="subdirectory1/">Subdirectory 1</a></li>
-        <li><a href="subdirectory2/">Subdirectory 2</a></li>
-    </ul>
+
+    <!-- Container for the navigation bar -->
+    <div id="navigation"></div>
+    <div id="body"></div>
+        <h1>Home Page</h1>
+        <h2>Contents</h2>
+        <ul>
+            <li><a>XAMPP Path: /opt/lampp/htdocs/</a></li>
+            <li><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=21330"  target="_blank">Aybuzem CENG311</a></li>
+            <li><a href="https://github.com/demirciAhmet/Responsive-Web-Design" target="_blank">GitHub Repo</a></li>
+            <li><a href="https://demirciahmet.github.io/Responsive-Web-Design/" target="_blank">GitHub Pages</a></li>
+            <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+            <li><a href="/javascript/lecture-examples/Slide5.html">JavaScript examples</a></li>
+            <li><a href="/javascript/Week6-JavaScript-Basics.pdf" target="_blank">Lecture pdf</a></li>
+            <li><a href="http://127.0.0.1/javascript/Activity6.pdf" target="_blank">Open Activity6 pdf</a></li>
+            <li><a href="http://127.0.0.1/Activity6.html" target="_blank">live share</a></li>
+        </ul>
+    </div>
 </body>
 </html>

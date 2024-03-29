@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
 <!--Ahmet Kaan Demirci 
-    SID: 21050111031
+    21050111031
 -->
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=“keywords” content="about me, Ahmet Kaan Demirci"/>
     <title>About Me</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            // Fetch and include navigation.html
+            $("#navigation").load("navigation.html");
+        });
+    </script>
 </head>
 
 <body>
+    <!-- Container for the navigation bar -->
+    <div id="navigation"></div>
     <h1>About Me</h1>
     <hr>
     <br>
