@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function(){
@@ -17,10 +18,10 @@
     <!-- Container for the navigation bar -->
     <div id="navigation"></div> </br>
   
-    <div id="text-container"></div>
+    <div class="main_body" id="links"></div> 
 
     <script>
-        // Function to fetch    and read text file line by line
+        // Function to fetch and read text file line by line
         function readTextFileLineByLine(filePath) {
             fetch(filePath)
                 .then(response => {
@@ -30,15 +31,17 @@
                     return response.text();
                 })
                 .then(text => {
-                    // Split the text into lines
                     const lines = text.split('\n');
                     
-                    // Process each line
                     lines.forEach(line => {
-                        // Here you can process each line as needed
-                        // For this example, let's just log each line to the console and append it to the HTML
                         console.log(line);
-                        document.getElementById('text-container').innerHTML += line + '<br>';
+
+                        var linkElement = document.createElement("a");
+                        linkElement.setAttribute("href", line);
+                        linkElement.setAttribute("target", "_blank");
+                        linkElement.textContent = line;
+                        document.getElementById("links").appendChild(linkElement);
+                        document.getElementById("links").appendChild(document.createElement("br"));
                     });
                 })
                 .catch(error => {
@@ -50,5 +53,6 @@
         readTextFileLineByLine('links');
     </script>
 
+     
 </body>
 </html>
