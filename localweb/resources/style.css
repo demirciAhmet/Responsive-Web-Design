@@ -1,0 +1,219 @@
+/** =====================================
+*          Global 
+=========================================*/
+* {
+    box-sizing: border-box;
+}
+
+
+/**=====================================
+*          Generic 
+*  =====================================*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #181a1b;
+}
+body .main_body {
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    margin-left: 5px;
+    margin-right: 10px;
+    color: #ddd;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    margin-bottom: 10px;
+}
+h1, h2, h3, p{
+    color: #ddd;
+}
+a {
+    color: #33bbcc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/**=====================================
+*          Top Navigation Bar 
+*  =====================================*/
+
+.navigation{
+    margin-top: 20px;
+    width: 700px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(50,60,64,0.3);
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+.navigation a {
+    float: left;
+    display: block;
+    color: white;
+    min-width: none;
+    padding: 14px 20px;
+    font-size: 20px;
+    border-radius: 100px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+}
+
+.navigation a:hover {
+    text-decoration: solid;
+    background-color: #ddd;
+    color: rgba(50,60,64);
+    transition: 0.5s;
+}
+
+/**=====================================
+*      Announcements Navigation Bar 
+*  =====================================*/
+
+.announcements-nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(50,60,64,0.9);
+    overflow: hidden;
+    transition: 0.2s;
+    border-bottom: 3px solid black;
+}
+
+.announcements-nav-bar a {
+    float:left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 14px;
+    font-size: 20px;
+    min-width: none;
+    border: none;
+    background-color: rgba(150,160,164,0.1);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+}
+.announcements-nav-bar a:first-child {
+    margin-right: auto;
+}
+
+.announcements-nav-bar a:hover {
+    text-decoration: solid;
+    background-color: rgba(190,200,214,0.5);
+    color: rgba(50,60,64);
+    transition: 0.9s;
+}
+
+.announcements-nav-bar .menu-symbol {
+    display:none;
+    font-size:30px;
+    padding-top: 0;
+    padding-bottom: 6px;
+}
+
+.announcements-nav-bar .active {
+    background-color: rgba(190,200,214,1);
+    color: rgba(50,60,64);
+}
+
+
+/**=====================================
+*          Iframe 
+*  =====================================
+*/
+.flex-container {
+    
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+}
+.flex-container iframe {
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+.iframe-container {
+    height: calc(100vh - 60px);
+}
+
+.iframe-container iframe {
+
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+
+/**=====================================*/
+@media screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        width: 300px;
+        border-radius: 10px;
+        background-color: transparent;  
+        transform: translateX(-40%);
+    }
+    .navigation a {
+        margin:2px;
+        border-radius: 100px;
+        background-color: rgba(50,60,64,0.3);
+    }
+    body .main_body{
+        margin-top: 225px;
+    }
+    .announcements-nav-bar a:not(:first-child) {
+        display: none;
+    }
+    .announcements-nav-bar a.menu-symbol {
+      float: right;
+      display: block;
+    }
+    .announcements-nav-bar.responsive {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 130px; 
+        background-color: rgba(50,60,64,1);
+        z-index: 1000;
+        overflow-y: auto; 
+        border-right: 3px solid black;
+    }
+    .announcements-nav-bar.responsive a {
+        padding-top:10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+        width: 100%;
+    }
+    .iframe-container.responsive {
+        position: absolute;
+        height: 100%;
+        width: calc(100% - 130px);
+        left:130px;
+    }
+    
+}
