@@ -3,7 +3,7 @@
  *  ==================================================*/
 function loadNavbar() {
     /* if the page doesn't use the generic navigation bar, don't load it */
-    if (window.location.pathname === '/announcements.html') {
+    if (window.location.pathname === '/home/src/announcements.html') {
         return;
     }
     fetch('navigation.html')
