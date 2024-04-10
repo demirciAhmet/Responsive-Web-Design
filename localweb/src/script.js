@@ -3,7 +3,7 @@
  *  ==================================================*/
 function loadNavbar() {
     /* if the page doesn't use the generic navigation bar, don't load it */
-    if (window.location.pathname === '/home/src/announcements.html') {
+    if (window.location.pathname === '/localweb/src/announcements.html') {
         return;
     }
     fetch('navigation.html')
@@ -49,7 +49,7 @@ function readTextFileLineByLine(filePath) {
 }
 if (window.location.pathname === 'links.html') {
     readTextFileLineByLine('../resources/links');
-} else if(window.location.pathname === '/home/src/links.html') {
+} else if(window.location.pathname === '/localweb/src/links.html') {
     readTextFileLineByLine('../resources/links');
 }
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.iframe-container').classList.toggle('responsive');
         document.querySelector('.announcements-nav-bar').classList.toggle('responsive');
     }
-    if(window.location.pathname === '/home/src/announcements.html') {
+    if(window.location.pathname === '/localweb/src/announcements.html') {
         document.querySelector('.menu-symbol').addEventListener('click', changeNavBar);
     }
 });
