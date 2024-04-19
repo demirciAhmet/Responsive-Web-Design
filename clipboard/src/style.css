@@ -89,6 +89,7 @@ a:hover {
     background-color: rgb(40, 59, 74);
     overflow: hidden;
     transition: 0.3s;
+    transition-property: none;
 }
 
 .announcements-nav-bar a {
@@ -145,6 +146,7 @@ a:hover {
 
 .iframe-container {
     height: calc(100vh - 51px);
+    background-color: white;
 }
 
 .iframe-container iframe {
@@ -153,7 +155,7 @@ a:hover {
     height: 100%;
     border:0;
 }
-
+/*
 .announcements-nav-bar.responsive {
         display: block;
         position: fixed;
@@ -172,7 +174,7 @@ a:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: block;
     width: 100%;
-}
+}*/
 
 .iframe-container.responsive {
     position: absolute;
@@ -217,7 +219,7 @@ a:hover {
         padding-top:10px;
         padding-left:0;
         padding-right:0;
-        border-bottom: 1px solid rgba(155,163,187,0.1)
+        border-bottom: 1px solid rgba(155,163,187,0.1);
         display: block;
         width: 100%;
     }
