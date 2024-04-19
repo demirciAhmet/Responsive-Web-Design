@@ -128,9 +128,12 @@ a:hover {
 }
 
 /**=====================================
-*          Iframe 
+*          Announcements Body 
 *  =====================================
 */
+.announcements-body{
+    background-color: white;
+}
 .flex-container {
     
     display: flex;
@@ -146,7 +149,6 @@ a:hover {
 
 .iframe-container {
     height: calc(100vh - 51px);
-    background-color: white;
 }
 
 .iframe-container iframe {
