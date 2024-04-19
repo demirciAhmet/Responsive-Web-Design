@@ -88,7 +88,7 @@ a:hover {
     text-align: center;
     background-color: rgba(50,60,64,0.9);
     overflow: hidden;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 .announcements-nav-bar a {
@@ -114,13 +114,11 @@ a:hover {
 
 .announcements-nav-bar a:hover {
     text-decoration: solid;
-    background-color: rgba(190,200,214,0.5);
-    color: rgba(50,60,64);
-    transition: 0.9s;
+    background-color: #13c0d7;
 }
 
 .announcements-nav-bar .active {
-    background-color: #13c0d7;
+    background-color: rgba(19, 192, 215,0.5);
     color: white;
 }
 
@@ -164,23 +162,21 @@ a:hover {
         z-index: 1000;
         overflow-y: auto; 
     }
-    .announcements-nav-bar.responsive a {
-        padding-top:10px;
-        padding-left:0;
-        padding-right:0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        display: block;
-        width: 100%;
-    }
-    .announcements-nav-bar.responsive a.menu-symbol {
-        padding-top:0;
-      }
-    .iframe-container.responsive {
-        position: absolute;
-        height: 100%;
-        width: calc(100% - 130px);
-        left:130px;
-    }
+.announcements-nav-bar.responsive a {
+    padding-top:10px;
+    padding-left:0;
+    padding-right:0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    width: 100%;
+}
+
+.iframe-container.responsive {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 130px);
+    left:130px;
+}
 
 /**=====================================*/
 @media screen and (max-width: 768px) {
@@ -212,7 +208,7 @@ a:hover {
         width: 130px; 
         background-color: rgba(50,60,64,1);
         z-index: 1000;
-        overflow-y: auto; 
+        overflow-y: auto;
     }
     .announcements-nav-bar a {
         padding-top:10px;
