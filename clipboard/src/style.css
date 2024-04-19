@@ -52,7 +52,7 @@ a:hover {
     width: max-content;
     z-index: 1000;
     align-items: center;
-    background-color: rgba(50,60,64,0.3);
+    background-color: rgba(0,3,10,0.2);
     border-radius: 100px;
     transition: 0.5s;
 }
