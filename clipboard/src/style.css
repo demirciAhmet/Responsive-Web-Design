@@ -114,11 +114,11 @@ a:hover {
 
 .announcements-nav-bar a:hover {
     text-decoration: solid;
-    background-color: #13c0d7;
+    background-color: rgba(19, 192, 215,0.8);
 }
 
 .announcements-nav-bar .active {
-    background-color: rgba(19, 192, 215,0.5);
+    background-color: #13c0d7;
     color: white;
 }
 
