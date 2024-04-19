@@ -83,6 +83,7 @@ a:hover {
 
 .announcements-nav-bar {
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: flex-start;
     text-align: center;
@@ -143,7 +144,7 @@ a:hover {
 }
 
 .iframe-container {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
 }
 
 .iframe-container iframe {
