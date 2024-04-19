@@ -45,17 +45,12 @@ a:hover {
 *  =====================================*/
 
 .navigation{
-    margin-top: 20px;
-    width: max-content;
-    top: 0;
+    position: absolute;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
+    width: max-content;
     z-index: 1000;
-
-    display: flex;
-    position: fixed;
-    overflow: hidden;
-    justify-content: center;
     align-items: center;
     background-color: rgba(50,60,64,0.3);
     border-radius: 100px;
@@ -64,16 +59,15 @@ a:hover {
 
 .navigation a {
     float: left;
-    display: block;
-    color: white;
-    min-width: none;
-    padding: 14px 20px;
-    font-size: 20px;
-    border-radius: 100px;
+    /*display: block;*/
     border: none;
-    text-align: center;
-    text-decoration: none;
+    border-radius: 100px;
+    /*text-decoration: none;*/
+    padding: 14px 20px;
+    color: white;
     font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 20px;
     font-weight: 100;
 }
 
@@ -81,7 +75,6 @@ a:hover {
     text-decoration: solid;
     background-color: #ddd;
     color: rgba(50,60,64);
-    transition: 0.5s;
 }
 
 /**=====================================
@@ -92,12 +85,10 @@ a:hover {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     text-align: center;
     background-color: rgba(50,60,64,0.9);
     overflow: hidden;
     transition: 0.2s;
-    border-bottom: 3px solid black;
 }
 
 .announcements-nav-bar a {
@@ -113,9 +104,12 @@ a:hover {
     background-color: rgba(150,160,164,0.1);
     font-family: 'Roboto Slab', serif;
     font-weight: 100;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 .announcements-nav-bar a:first-child {
     margin-right: auto;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    
 }
 
 .announcements-nav-bar a:hover {
@@ -125,16 +119,9 @@ a:hover {
     transition: 0.9s;
 }
 
-.announcements-nav-bar .menu-symbol {
-    display:none;
-    font-size:30px;
-    padding-top: 0;
-    padding-bottom: 6px;
-}
-
 .announcements-nav-bar .active {
-    background-color: rgba(190,200,214,1);
-    color: rgba(50,60,64);
+    background-color: #13c0d7;
+    color: white;
 }
 
 
@@ -166,6 +153,34 @@ a:hover {
     border:0;
 }
 
+.announcements-nav-bar.responsive {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 130px; 
+        background-color: rgba(50,60,64,1);
+        z-index: 1000;
+        overflow-y: auto; 
+    }
+    .announcements-nav-bar.responsive a {
+        padding-top:10px;
+        padding-left:0;
+        padding-right:0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: block;
+        width: 100%;
+    }
+    .announcements-nav-bar.responsive a.menu-symbol {
+        padding-top:0;
+      }
+    .iframe-container.responsive {
+        position: absolute;
+        height: 100%;
+        width: calc(100% - 130px);
+        left:130px;
+    }
 
 /**=====================================*/
 @media screen and (max-width: 768px) {
@@ -184,14 +199,11 @@ a:hover {
     body .main_body{
         margin-top: 225px;
     }
-    .announcements-nav-bar a:not(:first-child) {
-        display: none;
-    }
-    .announcements-nav-bar a.menu-symbol {
-      float: right;
-      display: block;
-    }
-    .announcements-nav-bar.responsive {
+
+}
+
+@media screen and (max-width: 768px) {
+    .announcements-nav-bar {
         display: block;
         position: fixed;
         left: 0;
@@ -201,15 +213,17 @@ a:hover {
         background-color: rgba(50,60,64,1);
         z-index: 1000;
         overflow-y: auto; 
-        border-right: 3px solid black;
     }
-    .announcements-nav-bar.responsive a {
+    .announcements-nav-bar a {
         padding-top:10px;
+        padding-left:0;
+        padding-right:0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         display: block;
         width: 100%;
     }
-    .iframe-container.responsive {
+
+    .iframe-container {
         position: absolute;
         height: 100%;
         width: calc(100% - 130px);

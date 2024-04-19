@@ -1,13 +1,16 @@
+const basePath = '/Responsive-Web-Design/clipboard/';
+
 /**  =================================================
  * load navigation bar by class .navigation
  *  ==================================================*/
 function loadNavbar() {
     /* if the page doesn't use the generic navigation bar, don't load it */
-    if (window.location.pathname === '/localweb/src/announcements.html') {
-        return;
-    }
-    fetch('navigation.html')
+    var navFile = basePath + 'src/navigation.html';
+    fetch(navFile)
     .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         return response.text();
     })
     .then(text => {
@@ -17,13 +20,17 @@ function loadNavbar() {
         console.error('There was a problem loading the navigation bar:', error);
     });
 }
-loadNavbar();
+if (window.location.pathname != basePath + 'src/announcements.html') {
+    loadNavbar();
+}
+
 
 
 /** ==================================================
  * Function to fetch and read text file for the links
  * ===================================================*/
 function readTextFileLineByLine(filePath) {
+    
     fetch(filePath)
     .then(response => {
         if (!response.ok) {
@@ -47,11 +54,9 @@ function readTextFileLineByLine(filePath) {
         console.error('There was a problem reading the text file:', error);
     });
 }
-if (window.location.pathname === 'links.html') {
+if (window.location.pathname === basePath + 'src/links.html') {
     readTextFileLineByLine('../resources/links');
-} else if(window.location.pathname === '/localweb/src/links.html') {
-    readTextFileLineByLine('../resources/links');
-}
+} 
 
 
 
@@ -76,14 +81,4 @@ function changeActiveColor(event) {
     var clickedLink = event.target;
     clickedLink.classList.add('active');
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-    function changeNavBar() {
-        document.querySelector('.iframe-container').classList.toggle('responsive');
-        document.querySelector('.announcements-nav-bar').classList.toggle('responsive');
-    }
-    if(window.location.pathname === '/localweb/src/announcements.html') {
-        document.querySelector('.menu-symbol').addEventListener('click', changeNavBar);
-    }
-});
   
