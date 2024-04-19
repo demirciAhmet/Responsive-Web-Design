@@ -101,7 +101,7 @@ a:hover {
     font-size: 20px;
     min-width: none;
     border: none;
-    background-color: rgba(150,160,164,0.1);
+    background-color: rgba(0,3,164,0.1);
     font-family: 'Roboto Slab', serif;
     font-weight: 100;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -193,7 +193,7 @@ a:hover {
     .navigation a {
         margin:2px;
         border-radius: 100px;
-        background-color: rgba(50,60,64,0.3);
+        background-color: rgba(0,3,10,0.2);
     }
     body .main_body{
         margin-top: 225px;
