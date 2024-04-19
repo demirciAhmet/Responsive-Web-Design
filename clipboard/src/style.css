@@ -106,11 +106,6 @@ a:hover {
     font-weight: 100;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
-.announcements-nav-bar a:first-child {
-    margin-right: auto;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    
-}
 
 .announcements-nav-bar a:hover {
     text-decoration: solid;
@@ -122,6 +117,14 @@ a:hover {
     color: white;
 }
 
+.announcements-nav-bar a:first-child {
+    margin-right: auto;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.announcements-nav-bar a:first-child:hover {
+    background-color: rgba(255, 255, 255,0.2);
+}
 
 /**=====================================
 *          Iframe 
