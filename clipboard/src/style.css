@@ -86,7 +86,7 @@ a:hover {
     display: flex;
     justify-content: flex-start;
     text-align: center;
-    background-color: rgba(50,60,64,0.9);
+    background-color: rgb(40, 59, 74);
     overflow: hidden;
     transition: 0.3s;
 }
@@ -206,7 +206,7 @@ a:hover {
         top: 0;
         bottom: 0;
         width: 130px; 
-        background-color: rgba(50,60,64,1);
+        background-color: rgb(40, 59, 74);
         z-index: 1000;
         overflow-y: auto;
     }
