@@ -1,97 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-
 
 /* General Styles */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Istok Web", sans-serif;
+    font-family: 'Arial', sans-serif;
     text-decoration: none;
 }
-
-
-body{background-color: #ececec;}
-
-header{
-    margin: auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    background: transparent;
-    border-bottom:2px solid #000;
-    align-items: center;
-    padding: 10px 20px;
+h2 {
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
-header h1{
-    font-size:38px;
-     font-weight: bold;
+/* general body section*/
+
+body {
+    background-color: #ececec;
 }
 
-
-/* CSS for navigation bar */
-
-
-nav ul {
-    align-items: center;
-    display: flex;
-    list-style-type: none;
-    gap: 8px;
-    
-}
-
-nav ul li a{
-    padding: 20px 10px;
-    color: #00051f;
-   
-    
-   
-}
-nav ul li a i{
-    padding: 20px 10px;
-    color: #00051f;
-   
-    
-   
-}
-nav ul li a:hover{
-    padding: 10px 10px;
-    color: #5672ff;
-
-  
-}
-/* Specific Styles */
 main {
     margin: auto;
-    max-width: 1200px;
+    max-width: 90%;
     padding: 20px;
 }
 
 section {
-    margin-bottom: 20px;
+    margin:20px;
 }
 
-footer {
-    text-align: center;
-}
-.contact-info {
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    margin: 5px 0; 
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333; /*Footer color*/
-    color: #fff;
-}
+/* form elements */
 
 button {
-    margin-top: 10px;
     padding: 10px;
     background-color: #007bff; /* Primary color for example */
     color: white;
@@ -102,4 +40,133 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Darker for hover */
+}
+
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/*header*/
+.header{
+    margin: auto;
+    max-width: 85%;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    border-bottom:2px solid #000;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header h1{
+    font-size:38px;
+     font-weight: bold;
+}
+
+
+/* CSS for navigation bar */
+
+.header nav ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    
+}
+
+.header nav ul li a{
+    padding: 20px 10px;
+    color: #00051f;
+   
+    
+   
+}
+
+.header nav ul li a i{
+    padding: 20px 10px;
+    color: #00051f;
+   
+    
+   
+}
+.header nav ul li a:hover{
+    padding: 10px 10px;
+    color: #5672ff;
+  
+}
+
+/* footer*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /*Footer color*/
+    color: #fff;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0; 
+}
+
+
+/* Clipbord Page */
+
+#linkList {
+
+}
+
+#linkList li {
+    justify-content: space-between;
+    padding: 3px;
+    margin: 10px;
+}
+
+#linkForm {
+    padding-top:50px;
+    display: flex;
+    gap: 10px;
+}
+
+#linkForm input {
+    padding: 10px;
+}
+
+#linkForm button {
+    padding: 10px;
+    width: 200px;
+    align-self: center;
+}
+
+.removeBtn {
+    margin-left: 15px;
+    background-color: rgb(200,44,54);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }

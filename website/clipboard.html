@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery-functions.js"></script>
+</head>
+<header class="header"></header>
+<body>
+    <main>
+        <section>
+            <h2>Clipboard</h2></br>
+            <ul id="linkList">
+                <li><a href="https://aybuzem.aybu.edu.tr/my/" target="_blank" rel="noopener noreferrer"
+                    >Aybuzem</a><button class="removeBtn">Remove</button></li></li>
+                <li><a href="https://aybuzem.aybu.edu.tr/course/view.php?id=21330" target="_blank" rel="noopener noreferrer"
+                    >Aybuzem CENG311 Page</a><button class="removeBtn">Remove</button></li></li>
+                <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                    >GitHub</a><button class="removeBtn">Remove</button></li></li>
+                <li><a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer"
+                    >ChatGPT</a><button class="removeBtn">Remove</button></li></li>
+            </ul>
+            <form id="linkForm">
+                <input type="text" id="linkName" placeholder="Link Name" required>
+                <input type="text" id="linkUrl" placeholder="Link URL" required>
+                <button type="submit">Add Link</button>
+            </form>
+        </section>  
+    </main>
+</body>
+<footer class="footer"></footer>
+</html>
