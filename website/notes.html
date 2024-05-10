@@ -8,7 +8,6 @@
     <link href="styles.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="jquery-plugins/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="jquery-functions.js"></script>
     <script src="script.js"></script>
 </head>
@@ -17,38 +16,41 @@
     <main>
         <section>
             <h1>Notes</h1></br>
-        <!-- Tabs HTML code -->
-        <div id="accordions">
-            <h3>1. Grade</a></h3>
-                <div id="accordion-1">
-                    <p>Some notes</p>
-                </div>
-            <h3>2. Grade</a></h3>
-                <div id="accordion-2">
-                    <p>Some notes</p>
-                </div>
-            <h3>3. Grade</a></h3>
-                <div id="accordion-3">
-                    <p>Some notes</p>
-                </div>
-            <h3>4. Grade</a></h3>
-                <div id="accordion-4">
-                    <p>Some notes</p>
-                </div>
-        </div>
+            <div id="accordions">
+                <h3>1. Grade</a></h3>
+                    <div id="accordion_1">
+                        <p>Some notes</p>
+                    </div>
+                <h3>2. Grade</a></h3>
+                    <div id="accordion_2">
+                        <p>Some notes</p>
+                    </div>
+                <h3>3. Grade</a></h3>
+                    <div id="accordion_3">
+                        <p>Some notes</p>
+                    </div>
+                <h3>4. Grade</a></h3>
+                    <div id="accordion_4">
+                        <p>Some notes</p>
+                    </div>
+            </div>
         </section>  
+        </br></br>
         <section>
-            <p>Please provide your notes and help us to improve the AYBÜ community. Thanks for your contribution! </p></br>
+            
             <h2>Add Note</h2>
-            <form id="notes-form">
+            <form id="notes_form">
                 <!-- Take grade with spinner -->
                 <label for="grade">Grade:</label>
                 <input type="text" id="grade" name="grade" required placeholder="1"></br>
+
                 <label for="lecture">Lecture:</label>
                 <input type="text" id="lecture" name="lecture" required="" placeholder="Computer Programming I"></br>
+
                 <label for="notes">Notes:</label>
                 <textarea id="notes" name="notes" required></textarea></br>
-                <button type="submit">Save</button>
+
+                <button type="submit" value="Submit" id="submit_note">Save</button>
             </form>
             <!-- Dialog HTML code -->
             <div id="info_dialog" title="Info">

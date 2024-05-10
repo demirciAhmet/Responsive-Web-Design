@@ -38,27 +38,3 @@ document.addEventListener("DOMContentLoaded", function() {
     loadHeader();
     loadFooter();
 });
-
-$(document).ready(function() {
-
-    $('#contact_form').submit(function(e) {
-        e.preventDefault();
-
-        // Get form data
-        var formData = {
-            name: $('#name').val(),
-            email: $('#email').val(),
-            message: $('#message').val(),
-            info: "Your message has been sent successfully!"
-        };
-
-        // Respond to form data with an alert
-        alert('Name: ' + formData.name + '\nEmail: ' + formData.email + '\nMessage: ' + formData.message + '\n\n' + formData.info);
-
-        // Clear form fields
-        $('#name').val('');
-        $('#email').val('');
-        $('#message').val('');
-    });
-
-});

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    /*
     //Clipboard Page
     $('#linkForm').submit(function(e){
         e.preventDefault(); // Prevent default form submission
@@ -13,7 +14,7 @@ $(document).ready(function(){
 
     $(document).on('click', '.removeBtn', function(){ // Add click event to dynamically added remove buttons
         $(this).closest('li').remove(); // Remove the closest <li> parent of the clicked button
-    });
+    });*/
 
     //Notes Page
 
@@ -24,6 +25,7 @@ $(document).ready(function(){
             
         }
     );
+
     $("#grade").spinner( // Initialize the spinner
         {
             min: 1,
@@ -52,6 +54,55 @@ $(document).ready(function(){
 
     $( "#lecture" ).autocomplete({ // Initialize the autocomplete
         source: lectures
+    });
+
+
+    $('#contact_form').submit(function(e) {
+        e.preventDefault();
+
+        // Get form data
+        var formData = {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            message: $('#message').val(),
+            info: "Your message has been sent successfully!"
+        };
+
+        // Respond to form data with an alert
+        alert('Name: ' + formData.name + '\nEmail: ' + formData.email + '\nMessage: ' + formData.message + '\n\n' + formData.info);
+
+        // Clear form fields
+        $('#name').val('');
+        $('#email').val('');
+        $('#message').val('');
+    });
+
+    $('#notes_form').submit(function(e) {
+        e.preventDefault();
+
+        // Get form data
+        var formData = {
+            grade: $('#grade').val(),
+            lecture: $('#lecture').val(),
+            notes: $('#notes').val()
+        };
+
+        // Add to the specified grade accordion
+        var grade = formData.grade;
+        var lecture = formData.lecture;
+        var notes = formData.notes;
+        var accordion = $('#accordion_' + grade);
+        var listItem = '<h3>' + lecture + '</h3><div><p>' + notes + '</p></div>';
+
+        accordion.append(listItem);
+        accordion.accordion('refresh');
+        
+        // Clear form fields
+        $('#grade').val('');
+        $('#lecture').val('');
+        $('#notes').val('');
+
+        console.log("Notes added");
     });
 
 });

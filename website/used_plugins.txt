@@ -1,0 +1,4 @@
+notes.html -> "accordion" for organizing grades
+notes.html -> "spinner" for select grades (1 to 4)
+notes.html -> "dialog" to inform user on page load
+notes.html -> "autocomplete" to help user to select correct lectures
