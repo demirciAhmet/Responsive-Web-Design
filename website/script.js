@@ -40,30 +40,25 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 $(document).ready(function() {
-    $('#contactForm').submit(function(e) {
-        e.preventDefault(); // Prevent form submission
+
+    $('#contact_form').submit(function(e) {
+        e.preventDefault();
 
         // Get form data
         var formData = {
             name: $('#name').val(),
             email: $('#email').val(),
-            message: $('#message').val()
+            message: $('#message').val(),
+            info: "Your message has been sent successfully!"
         };
 
-        // Send data to a server (you can replace this with your backend endpoint)
-        $.ajax({
-            type: 'POST',
-            url: 'your-backend-endpoint',
-            data: formData,
-            success: function(response) {
-                // On success, show a success message or redirect to a thank you page
-                alert('Thank you! Your message has been sent.');
-                $('#contactForm')[0].reset(); // Clear the form
-            },
-            error: function(xhr, status, error) {
-                // On error, show an error message
-                alert('Error! Message could not be sent. Please try again later.');
-            }
-        });
+        // Respond to form data with an alert
+        alert('Name: ' + formData.name + '\nEmail: ' + formData.email + '\nMessage: ' + formData.message + '\n\n' + formData.info);
+
+        // Clear form fields
+        $('#name').val('');
+        $('#email').val('');
+        $('#message').val('');
     });
+
 });

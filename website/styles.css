@@ -65,6 +65,12 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+#grade {
+    width: 50px;
+    border: none;
+}
+
+
 
 /*header*/
 .header{
@@ -83,6 +89,9 @@ input[type="submit"]:hover {
      font-weight: bold;
 }
 
+#notes_menu {
+    display:none;
+}
 
 /* CSS for navigation bar */
 
