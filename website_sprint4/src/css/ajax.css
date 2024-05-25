@@ -1,0 +1,97 @@
+/* the styles for the elements */
+nav a:focus, nav a:hover, article a:hover {
+	font-style: italic;
+}
+
+/* the styles for the main content */
+main {
+	clear: left;
+	padding: 0 20px 20px;
+	width: 625px;
+	float: left;
+	margin-left: 10%;
+}
+main h1 {
+	color: #121212;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+main h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+main p {
+	padding-bottom: .5em;
+}
+main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+main ul {
+	padding: 0 0 1.5em 1.25em;
+}
+main li {
+	padding-bottom: .35em;
+}
+
+main img {
+	float: right;
+	margin: 1em 0 1em 1em;
+	border: 1px solid black;
+	width: 200px;
+	height: auto;
+}
+
+aside {
+	width: 215px;
+	float: left;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+aside h1 {
+	color: #121212;
+	font-size: 150%;
+	padding: .5em 0 .25em;
+}
+aside h2 {
+	font-size: 120%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+/* the styles for the navigation list */
+#nav_list ul { 
+	list-style: none;
+	margin-left: 0px;
+	margin-bottom: 1.5em; }
+#nav_list li { 
+	width: 150px;
+	margin-bottom: .5em;
+	border: 2px double green;
+	border-radius: 20px;
+	box-shadow: 3px 3px 0 0 #15aaa3;
+	background-image: url("images/right.jpg");
+	background-repeat: no-repeat;
+	background-position: 95% center;
+		
+}
+#nav_list li a {
+	display: block;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	padding: .5em 0 .5em 1em;
+}
+
+/* the styles for the footer */
+footer {
+	
+	border-top: 3px solid #121212;
+	padding: 1em 0;
+	clear: both;
+	bottom: 0;
+}
+footer p {
+	text-align: center;
+}

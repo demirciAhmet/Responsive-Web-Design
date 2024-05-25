@@ -1,0 +1,9 @@
+{"speakers":[
+	{
+		"month": "May 18",
+		"title": "CENG201 Object Oriented Programming Project",
+		"speaker": "Abdullah Bulbul",
+		"image": "../../assets/img/ajax_images/abdullah-bulbul.png",
+		"text": "In the CENG201 Object-Oriented Programming project, students are embarking on a journey to apply the foundational principles of object-oriented programming (OOP) to develop robust and scalable software solutions. This hands-on assignment requires students to conceptualize, design, and implement a software application using OOP concepts such as encapsulation, inheritance, polymorphism, and abstraction. Through this project, students gain practical experience in software development lifecycle, including requirements analysis, design patterns, coding practices, and testing methodologies. Whether it's building a small-scale application or tackling a more ambitious project, this assignment challenges students to think critically, problem-solve creatively, and collaborate effectively in teams, preparing them for real-world scenarios in software engineering and development."		
+	}
+]}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" >
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header"></header>
+    <main>
+        <section>
+            <h1>Flickr Photo Search</h1></br>
+            <div>
+                <label for="search">Enter tag(s):</label>
+                <input type="text" id="search" placeholder="hubble  ">
+                <button id="btnSearch">Search by Tag</button>
+            </div></br>
+            <div>
+                <label for="userSearch">Enter ID:</label>
+                <input type="text" id="userSearch" placeholder="33037982@N04" value="33037982@N04">
+                <button id="btnUserSearch">Search by ID</button>
+            </div></br>
+            <h1>Results</h1></br>
+            <div id="flickr_photos"></div>
+        </section>  
+    </main>
+    <footer class="footer"></footer>
+    <!-- Load scripts-->
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

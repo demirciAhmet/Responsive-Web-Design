@@ -1,0 +1,9 @@
+{"speakers":[
+	{
+		"month": "May 24",
+		"title": "CENG102 Computer Programming II Homework-6",
+		"speaker": "Fatih Nar",
+		"image": "../../assets/img/ajax_images/fatih-nar.png",
+		"text": "In the latest homework assignment for CENG102 Computer Programming II, students are tasked with delving deeper into programming concepts and refining their problem-solving skills through hands-on coding exercises. Homework 6 builds upon the foundational knowledge acquired in previous assignments, focusing on more advanced topics such as data structures, algorithms, and modular programming. Students may be required to implement complex algorithms, work with arrays, manipulate strings, and utilize functions to streamline their code. Additionally, the assignment may include tasks related to file handling, error handling, and debugging techniques to reinforce best practices in software development. By tackling challenging problems and writing efficient, well-structured code, students further solidify their programming proficiency and prepare themselves for tackling more sophisticated projects in the future."		
+	}
+]}

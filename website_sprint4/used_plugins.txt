@@ -1,0 +1,14 @@
+JQuery Plugins:
+
+notes.html -> "accordion" for organizing grades
+notes.html -> "spinner" for select grades (1 to 4)
+notes.html -> "dialog" to inform user on page load
+notes.html -> "dialog" to inform user on note addition
+notes.html -> "autocomplete" to help user to select correct lectures
+
+
+AJAX:
+
+events.html -> event changer according to lecturers fetched from json file
+search.html -> flickr photo search by user ID fetched from external website
+search.html -> flickr photo search by tag fetched from external website
